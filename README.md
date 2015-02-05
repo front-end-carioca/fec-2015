@@ -26,7 +26,7 @@ Como o tema do evento é voltado para o lado Front-end, em sua grande parte, que
 
  * [Atomic Design](https://angularjs.org/) - Modelo de desenvolvimento de componentes reutilizáveis
 
- * JSON - Um arquivo que vai nos dar o conteuúdo, o qual iremos consumir (Base de dados estática)
+ * JSON - Vai nos dar o conteúdo, estático
 
  * JavaScript - A linguagem famosa entre os front-ends.
 
