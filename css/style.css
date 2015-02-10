@@ -99,3 +99,9 @@ article {
 	display: block;
 	text-indent: -9999px;
 }
+
+@media (max-width: 1300px) {
+	.logotipo {
+		margin-top: 30px;
+	}
+}
