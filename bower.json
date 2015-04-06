@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/front-end-carioca/fec-2015",
   "authors": [
-    "Andre Valle <andrevvalle@icloud.com>"
+    "Andre Valle <andrevvalle@icloud.com>",
+    "Pedro Polisenso <pedropolisenso@gmail.com>"
   ],
   "description": "Website FEC_2015",
   "license": "MIT",
@@ -13,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "jasmine": "https://github.com/jasmine/jasmine/releases/download/v2.2.0/jasmine-standalone-2.2.0.zip",
+    "foundation": "~5.5.1"
+  }
 }
