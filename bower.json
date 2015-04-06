@@ -1,0 +1,17 @@
+{
+  "name": "front-end-carioca",
+  "version": "0.0.0",
+  "homepage": "https://github.com/front-end-carioca/fec-2015",
+  "authors": [
+    "Andre Valle <andrevvalle@icloud.com>"
+  ],
+  "description": "Website FEC_2015",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

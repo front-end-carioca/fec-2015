@@ -1,0 +1,9 @@
+{
+  "name": "sample",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
