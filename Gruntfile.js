@@ -1,11 +1,16 @@
 module.exports = function(grunt) {
 
+	var jsFiles = [
+	    'vendor/assets/jquery/dist/jquery.js',
+	    'development/assets/**/*.js'
+	];
+
 	grunt.initConfig({
 		connect :  {
 			server : {
 				options : {
 					hostname : 'localhost',
-					port: 9292,
+					port: 8080,
 					keepalive: true,
 					open: true,
 					base: 'public/'
@@ -25,9 +30,43 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		jade: {
+			compile: {
+				options: {
+					data: {
+						debug: false
+					}
+				},
+				files: {
+					"public/index.html": ["development/index.jade"]
+				}
+			}
+		},
+		uglify: {
+			options: {
+				mangle: {
+					except: ['jQuery']
+				}
+			},
+			my_target: {
+				files: {
+					'public/assets/js/main.min.js': ['public/assets/js/main.js']
+				}
+			}
+		},
+		concat: {
+			dist: {
+		      src: jsFiles,
+		      dest: 'public/assets/js/main.js',
+		    }
+		},
 		watch: {
 			gruntfile: {
 				files: ['Gruntfile.js']
+			},
+			jade: {
+				files: ['development/**/*.jade', 'development/*.jade'],
+				tasks: ['jade']
 			},
 			sass: {
 				files: ['development/assets/style/*.sass'],
@@ -35,6 +74,17 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: ['public/assets/style/*.css'],
+				options: {
+					livereload: true
+				}
+			},
+			concat: {
+				files: jsFiles,
+				tasks: ['concat']
+			},
+			uglify: {
+				files: ['public/assets/js/main.js'],
+				tasks: ['uglify'],
 				options: {
 					livereload: true
 				}
@@ -61,5 +111,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-
+	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 };
