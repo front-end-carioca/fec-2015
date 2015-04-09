@@ -2,6 +2,8 @@ module.exports = function(grunt) {
 
 	var jsFiles = [
 	    'vendor/assets/jquery/dist/jquery.js',
+	    'vendor/assets/jquery.stellar/jquery.stellar.min.js',
+	    'vendor/assets/parallax/parallax.min.js',
 	    'development/assets/**/*.js'
 	];
 
