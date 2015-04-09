@@ -1,0 +1,35 @@
+.navMenu
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 9
+
+.navMenu--list
+	margin: 0 auto
+	padding: 50px 0
+	list-style: none
+	width: 875px
+	position: relative
+	&:after
+		content: ""
+		display: block
+		width: 85%
+		height: 1px
+		background: #fff
+		margin: 0 auto
+		opacity: .6
+		position: relative
+		top: 45px
+
+.navMenu--item
+	display: inline-block
+	a
+		font-family: 'Open Sans', sans-serif
+		font-size: em(15px)
+		font-weight: 300
+		padding: 0 20px
+		text-decoration: none
+		color: #fff
+		cursor: pointer
+		&:hover, &.active
+			color: #d39641

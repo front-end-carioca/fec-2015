@@ -1,9 +1,40 @@
 include markup/default
 block content
-	.row
-		.columns.small-12.large-6
-			h1="Conectado.."
-		.columns.small-12.large-6
-			h1="Front End Carioca - 2015"
+	.wrapper
+		section(id="intro", class="intro")
+			+navMenu([
+				{
+					url: '#',
+					link: 'HOME'
+				},
+				{
+					url: '#',
+					link: 'O EVENTO'
+				},
+				{
+					url: '#',
+					link: 'PROGRAMAÇÃO'
+				},
+				{
+					url: '#',
+					link: 'CONVIDADOS'
+				},
+				{
+					url: '#',
+					link: 'LOCAL'
+				},
+				{
+					url: '#',
+					link: 'PATROCINADORES'
+				},
+				{
+					url: '#',
+					link: 'CONTATO'
+				}
+			])
+			+header('Header')
+		.space-top
+		section(id="about", class="about")
+			h2="O Evento"
 block footer
 	include markup/scripts
