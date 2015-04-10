@@ -6,15 +6,18 @@ Fec.IndexRoute = (function() {
 			hideDistantElements: false,
 			verticalOffset: 0
 		});
+		
 	}
 
 	IndexRoute.fn = IndexRoute.prototype;
 
 	IndexRoute.fn.run = function() {
-	    console.log('Index Route Running');
+	    var i = 0;
 
 	    this.heightHeader();
 	    this.scrollParalax();
+	    this.bodyHidden();
+
 	};
 
 	IndexRoute.fn.heightHeader = function() {
@@ -28,10 +31,16 @@ Fec.IndexRoute = (function() {
 	};
 
 	IndexRoute.fn.scrollParalax = function() {
-	    var $logoFec = $('.intro-logo');
 
 	    $('header').parallax({imageSrc: '/assets/image/bg-header4.jpg'});
 
+	};
+
+	IndexRoute.fn.bodyHidden = function() {
+	    var timeBody = setTimeout(function() {
+	    	$('body').removeClass('hidden');
+	    	clearTimeout(timeBody);
+	    }, 3300);
 	};
 	
 	return IndexRoute;

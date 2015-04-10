@@ -1,21 +1,35 @@
 html
 	font-size: $base-font-size
 
-.about
+.hidden
+	overflow: hidden
+
+.wrapper-content-home
 	background: #fff
 	position: relative
-	display: flex
-	height: 1200px
 	z-index: 9
-	&:before
-		content: ""
-		display: block
-		width: 100%
-		height: 90px
-		position: absolute
-		top: -89px
-		left: 0
-		background-image: url('../image/shapes-top.svg')
-		background-repeat: no-repeat
-		background-size: contain
-		background-position: bottom
+
+.title-section
+	text-align: center
+	h2
+		font-size: em(36px)
+		font-weight: 400
+
+.content-section
+	width: 450px
+	margin: 0 auto
+	margin-top: 50px
+	color: #455a64
+	text-align: justify
+	h2
+		font-size: em(26px)
+	p
+		font-size: em(16px)
+
+.banner-one
+	width: 100%
+	min-height: 400px
+	background: linear-gradient(rgba(23, 27, 35, 0.7), rgba(23, 27, 35, 0.7)), url('/assets/image/bg-header.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 0 0
