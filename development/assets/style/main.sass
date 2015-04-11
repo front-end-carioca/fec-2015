@@ -12,10 +12,17 @@ html
 .title-section
 	text-align: center
 	h2
+		font-family: 'Lato', sans-serif
 		font-size: em(36px)
-		font-weight: 400
+		font-weight: 600
+		color: #d39641
+		display: inline-block
+		text-transform: uppercase
+		text-align: right
+		margin: 0
 
 .content-section
+	font-family: 'Roboto', sans-serif
 	width: 450px
 	margin: 0 auto
 	margin-top: 50px
@@ -26,10 +33,12 @@ html
 	p
 		font-size: em(16px)
 
-.banner-one
-	width: 100%
-	min-height: 400px
-	background: linear-gradient(rgba(23, 27, 35, 0.7), rgba(23, 27, 35, 0.7)), url('/assets/image/bg-header.jpg')
+.banner
+	background-attachment: fixed
+	height: 50vh
+	background-position: center center
 	background-size: cover
-	background-repeat: no-repeat
-	background-position: 0 0
+
+.banner-one
+	background-image: url('/assets/image/banner1.jpg')
+	

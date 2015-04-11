@@ -12,7 +12,12 @@ Fec.IndexRoute = (function() {
 	IndexRoute.fn = IndexRoute.prototype;
 
 	IndexRoute.fn.run = function() {
-	    var i = 0;
+		window.onload = function() {
+			setTimeout(function() {
+				$(document.body).scrollTop(0);
+				$('body').addClass('hidden');
+			}, 15);
+		};
 
 	    this.heightHeader();
 	    this.scrollParalax();
@@ -32,7 +37,7 @@ Fec.IndexRoute = (function() {
 
 	IndexRoute.fn.scrollParalax = function() {
 
-	    $('header').parallax({imageSrc: '/assets/image/bg-header4.jpg'});
+	    $('header').parallax({imageSrc: '/assets/image/bg-header3.jpg'});
 
 	};
 
