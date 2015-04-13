@@ -1,6 +1,6 @@
 ## Front-end Carioca - 2ºEdição
 
-![Cover](edicoes/2015/image/front-end-carioca.png)
+![Cover](https://scontent-gru.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10945516_446559562158170_1826444704075673067_n.png?oh=6c98ae69e529f183af95b554f532d9cf&oe=55DEA95E)
 
 > Maintainer: [Pedro Polisenso](https://github.com/pedropolisenso) & [André Vitor Valle](https://github.com/andrevvalle)
 
