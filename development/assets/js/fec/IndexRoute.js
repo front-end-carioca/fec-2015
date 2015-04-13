@@ -23,6 +23,7 @@ Fec.IndexRoute = (function() {
 	    this.scrollParalax();
 	    this.bodyHidden();
 	    this.animateSvg();
+	    this.menuAnchor();
 
 	};
 
@@ -68,6 +69,34 @@ Fec.IndexRoute = (function() {
 
 			lastScrollTop = st;
 		});
+	};
+
+	IndexRoute.fn.menuAnchor = function() {
+		
+		var lastId,
+		topMenu = $(".navMenu"),
+		topMenuHeight = topMenu.outerHeight(),
+		menuItems = $('.navMenu ul li a'),
+		scrollItems = menuItems.map(function(){
+			var item = $($(this).attr("href"));
+			if (item.length) { return item; }
+		});
+
+		menuItems.click( function(e){
+			e.preventDefault();
+
+			var href = $(this).attr("href"),
+			parent = $(this),
+			offsetTop = href === "#" ? 0 : $(href).offset().top;
+
+			$('.navMenu--list li a').removeClass('active');
+			$(parent).addClass('active')
+
+			$('html, body').stop().animate({ 
+				scrollTop: offsetTop
+			}, 300);
+		});
+
 	};
 	
 	return IndexRoute;
