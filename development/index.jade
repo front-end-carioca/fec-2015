@@ -6,15 +6,15 @@ block content
 		section(id="intro", class="intro")
 			+navMenu([
 				{
-					url: '#',
+					url: '#intro',
 					link: 'HOME'
 				},
 				{
-					url: '#',
+					url: '#about',
 					link: 'O EVENTO'
 				},
 				{
-					url: '#',
+					url: '#programacao',
 					link: 'PROGRAMAÇÃO'
 				},
 				{
@@ -37,12 +37,12 @@ block content
 			+header('Header')
 		.space-top
 		.wrapper-content-home
-			section(id="about", class="section-about animated-section-about slideInUp-Header")
+			section(id="about", class="section section-about animated-section-about slideInUp-Header")
 				+sectionAbout()
 			.parallax
 				div(class="banner banner-one")
 					h3="AQUEÇAM OS MOTORES :)"
-			section(id="programacao", class="section-programacao")
+			section(id="programacao", class="section section-programacao")
 				+sectionProgramacao()
 			br
 			br
