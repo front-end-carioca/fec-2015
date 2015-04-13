@@ -1,2 +1,53 @@
 .section-programacao
 	position: relative
+
+.content-programacao
+	margin-top: 80px
+
+.timeline
+	list-style: none
+	margin: 60px 0 0
+	padding: 0 15px
+	position: relative
+
+	li
+		border: 0
+		margin: 0
+		padding: 50px 50px 50px 20px
+		position: relative
+		text-align: left
+		overflow: hidden
+		&:before
+			position: absolute
+			content: ""
+			top: 80px
+			left: 50%
+			height: 100%
+			width: 3px
+			border-left: 2px dashed rgba(0,0,0,.15)
+
+		.box-talk
+			position: relative
+			float: right
+			width: 50%
+			padding-left: 60px
+			&:before
+				content: ""
+				background: #d39641
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 6px
+				left: 10px
+				z-index: 1
+				-webkit-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+
+		.sub-title
+			font-size: 18px
+			margin: 5px 0 20px
+			letter-spacing: 1.5px
+			text-transform: uppercase
+
+		p:last-child
+			margin-bottom: 0

@@ -12,6 +12,10 @@ body
 	position: relative
 	z-index: 9
 
+.section
+	padding-top: 100px
+	padding-bottom: 100px
+
 .title-section
 	text-align: center
 	h2
@@ -23,6 +27,29 @@ body
 		text-transform: uppercase
 		text-align: right
 		margin: 0
+		position: relative
+		&:after
+			content: ""
+			display: block
+			width: 10px
+			height: 10px
+			background: #d39641
+			position: absolute
+			top: 24px
+			left: -30px
+			-webkit-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:before
+			content: ""
+			display: block
+			width: 10px
+			height: 10px
+			background: #d39641
+			position: absolute
+			top: 24px
+			right: -30px
+			-webkit-transform: rotate(-45deg)
+			transform: rotate(-45deg)
 
 .content-section
 	font-family: 'Roboto', sans-serif
@@ -41,11 +68,33 @@ body
 	height: 50vh
 	background-position: center center
 	background-size: cover
+	text-align: center
 	h2, h3, h4
 		color: #fff
 		font-family: 'Lato', sans-serif
-		font-size: em(60px)
+		font-size: em(70px)
+		font-weight: 200
+		font-style: italic
 		margin: 0
+		padding: 130px 180px
+		&:before
+			content: ""
+			display: block
+			width: 60%
+			height: 1px
+			background: #fff
+			position: relative
+			top: -25px
+			margin: 0 auto
+		&:after
+			content: ""
+			display: block
+			width: 60%
+			height: 1px
+			background: #fff
+			position: relative
+			top: 25px
+			margin: 0 auto
 
 @media screen and (-webkit-min-device-pixel-ratio:0) 
 	.banner
