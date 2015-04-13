@@ -97,6 +97,30 @@ Fec.IndexRoute = (function() {
 			}, 300);
 		});
 
+		$(window).scroll(function(){
+			var fromTop = $(this).scrollTop();
+
+			var cur = scrollItems.map(function(){
+				var numberSplit = $(this).offset().top
+				numberSplit = numberSplit.toString().split('.')
+				numberSplit = parseInt(numberSplit[0], 10);
+				if (numberSplit <= fromTop){
+					$('.navMenu--list li a').removeClass('active');
+					return this;
+				}
+			});
+
+			var Lenght = cur.length -1;
+			if(Lenght == -1){
+				Lenght = 0;
+			}
+
+			if (cur[Lenght]){
+				$('a[href='+cur[Lenght].selector+']').addClass('active');
+			};
+		
+		});
+
 	};
 	
 	return IndexRoute;
