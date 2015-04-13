@@ -1,6 +1,9 @@
 html
 	font-size: $base-font-size
 
+body
+	-webkit-backface-visibility:hidden
+
 .hidden
 	overflow: hidden
 
@@ -38,6 +41,15 @@ html
 	height: 50vh
 	background-position: center center
 	background-size: cover
+	h2, h3, h4
+		color: #fff
+		font-family: 'Lato', sans-serif
+		font-size: em(60px)
+		margin: 0
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+	.banner
+		background-attachment: inherit
 
 .banner-one
 	background-image: url('/assets/image/banner1.jpg')
