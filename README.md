@@ -8,6 +8,24 @@
 
 Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte do nosso time, se você está interessado em ajudar e saber o que rola nos bastidores do evento com nossos convidados, fique atento, pois iremos disponibilizar em nossas redes sociais essa chance a vocês!
 
+***Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:***
+
+1 - Fork o projeto e logo após dê um clone.
+
+2 - Acesse a pasta do projeto e baixe os módulos do NPM: 
+
+`npm install`
+
+3 - Inicie o Servidor:
+
+`npm start`
+
+4 - Inicie o Grunt:
+
+`grunt watch`
+
+OBS. Suas alterações devem ser feitas na path development. por fim, nos envie seu PR ;)
+
 ## Tecnologias e conceitos aplicados
 
 Como o tema do evento é voltado para o lado Front-end, em sua grande parte, queremos compartilhar com vocês as formas que iremos usar em nossa aplicação de 2015. Caso você queira ajudar de algum forma, fique à vontade para contribuir.
