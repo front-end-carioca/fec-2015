@@ -2362,7 +2362,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .patrocinio-column h4:after {
   content: "";
@@ -2380,15 +2380,6 @@ header {
   width: 100%;
   max-width: 150px;
   margin: 0 auto;
-}
-.patrocinio-column.booking img {
-  position: relative;
-  top: 25px;
-  max-width: 200px;
-}
-.patrocinio-column.google img {
-  position: relative;
-  top: 13px;
 }
 
 .parceiras {

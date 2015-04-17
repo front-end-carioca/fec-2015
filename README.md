@@ -16,11 +16,15 @@ Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte 
 
 `npm install`
 
-3 - Inicie o Servidor:
+3 - Agora instale as dependencias do bower: 
+
+`bower install`
+
+4 - Inicie o Servidor:
 
 `npm start`
 
-4 - Inicie o Grunt:
+5 - Inicie o Grunt:
 
 `grunt watch`
 
