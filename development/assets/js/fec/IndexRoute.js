@@ -44,9 +44,11 @@ Fec.IndexRoute = (function() {
 	};
 
 	IndexRoute.fn.bodyHidden = function() {
+		var self = this;
 	    var timeBody = setTimeout(function() {
 	    	$('body').removeClass('hidden');
 	    	clearTimeout(timeBody);
+	    	self.googleMaps();
 	    }, 3300);
 	};
 
@@ -121,6 +123,16 @@ Fec.IndexRoute = (function() {
 		
 		});
 
+	};
+
+	IndexRoute.fn.googleMaps = function(args) {
+		var mapCanvas = document.getElementById('map-canvas');
+		var mapOptions = {
+			center: new google.maps.LatLng(-22.9499471, -43.1809351),
+			zoom: 13,
+			scrollwheel: false
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
 	};
 	
 	return IndexRoute;

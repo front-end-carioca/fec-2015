@@ -18,16 +18,12 @@ block content
 					link: 'PROGRAMAÇÃO'
 				},
 				{
-					url: '#',
-					link: 'CONVIDADOS'
-				},
-				{
-					url: '#',
+					url: '#local',
 					link: 'LOCAL'
 				},
 				{
-					url: '#',
-					link: 'PATROCINADORES'
+					url: '#patrocinio',
+					link: 'PATROCÍNIO'
 				},
 				{
 					url: '#',
@@ -39,11 +35,38 @@ block content
 		main(class="wrapper-content-home", role="main")
 			section(id="about", class="section section-about animated-section-about slideInUp-Header")
 				+sectionAbout()
-			.parallax
-				div(class="banner banner-one")
-					h3="AQUEÇAM OS MOTORES :)"
+			div(class="banner banner-one")
+				h3="AQUEÇAM OS MOTORES :)"
 			section(id="programacao", class="section section-programacao")
 				+sectionProgramacao()
-			section(id="convidados", class="section")
+			section(id="local", class="section section-local")
+				+sectionLocal()
+			section(id="patrocinio", class="section section-patrocinio")
+				+sectionPatrocinio()
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
 block footer
 	include markup/scripts
