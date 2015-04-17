@@ -26,7 +26,7 @@ block content
 					link: 'PATROCÍNIO'
 				},
 				{
-					url: '#',
+					url: '#contato',
 					link: 'CONTATO'
 				}
 			])
@@ -43,30 +43,9 @@ block content
 				+sectionLocal()
 			section(id="patrocinio", class="section section-patrocinio")
 				+sectionPatrocinio()
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
+			div(class="banner banner-two")
+				img(src="assets/image/logo-shield.png" alt="Logo Front End Carioca 2015")
+			section(id="contato", class="section section-contato")
+				+sectionContato()
 block footer
 	include markup/scripts
