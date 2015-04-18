@@ -4,3 +4,4 @@
 /vendor/assets
 /.grunt
 npm-debug.log
+.brackets.json
