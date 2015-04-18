@@ -1,9 +1,0 @@
-mixin navMenu(items)
-	nav(role="navigation", class="row navMenu")
-		ul.navMenu--list
-			each item, i in items
-				li.navMenu--item
-					if i === 0
-						a(class="active", href="#{item.url}")=item.link
-					else
-						a(href="#{item.url}")=item.link
