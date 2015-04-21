@@ -1,13 +1,22 @@
 mixin sectionContato()
 	.row
 		.title-section
-			h2="Contato"
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
+			h2="Acompanhe nossas redes sociais"
+		.content-section
+			ul.social-list
+				li
+					a(href="https://www.facebook.com/frontendcarioca", class="facebook", target="_blank")
+						i.icon-social-facebook
+				li
+					a(href="https://twitter.com/frontendcarioca", class="twitter", target="_blank")
+						i.icon-social-twitter
+				li
+					a(href="https://github.com/front-end-carioca", class="github", target="_blank")
+						i.icon-social-github
+	footer
+		.row
+			.logo-footer
+				img(src="assets/image/logo-footer.png", alt="logo front end carioca")
+			.content-footer
+				a(href="mailto:contato@frontendcarioca.com.br", class="email-contact")!="CONTATO<span>@</span>FRONTENDCARIOCA.COM.BR"
+				p="© 2014 / 2015 - FRONT END CARIOCA. TODOS OS DIREITOS RESERVADOS."
