@@ -87,12 +87,12 @@ Fec.IndexRoute = (function() {
 		menuItems.click( function(e){
 			e.preventDefault();
 
+			if($('body').hasClass('hidden')){
+				$('body').removeClass('hidden');
+			}
 			var href = $(this).attr("href"),
 			parent = $(this),
 			offsetTop = href === "#" ? 0 : $(href).offset().top;
-
-			$('.navMenu--list li a').removeClass('active');
-			$(parent).addClass('active')
 
 			$('html, body').stop().animate({ 
 				scrollTop: offsetTop

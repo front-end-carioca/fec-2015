@@ -91,15 +91,16 @@ body
 			transform: rotate(-45deg)
 
 .content-section
-	font-family: 'Roboto', sans-serif
 	width: 450px
 	margin: 0 auto
 	margin-top: 50px
 	color: #455a64
 	text-align: justify
-	h2
+	h2, h3, h4
+		font-family: 'Roboto', sans-serif
 		font-size: em(26px)
 	p
+		font-family: 'Roboto', sans-serif
 		font-size: em(16px)
 
 .banner
@@ -135,7 +136,7 @@ body
 			top: 25px
 			margin: 0 auto
 
-@media screen and (-webkit-min-device-pixel-ratio:0) 
+@media screen and (-webkit-min-device-pixel-ratio:0)
 	.banner
 		background-attachment: inherit
 
@@ -144,4 +145,18 @@ body
 
 .banner-two
 	background-image: url('/assets/image/banner2.jpg')
+
+.content-banner
+	padding: 34px 0
+	h2, h3, h4
+		padding: 0
+		text-transform: uppercase
+		font-family: 'Lato', sans-serif
+		font-style: normal
+		font-weight: 800
+		letter-spacing: -4px
+		&:before
+			display: none
+		&:after
+			display: none
 	
