@@ -9009,17 +9009,18 @@ html {
 }
 
 .content-section {
-  font-family: "Roboto", sans-serif;
   width: 450px;
   margin: 0 auto;
   margin-top: 50px;
   color: #455a64;
   text-align: justify;
 }
-.content-section h2 {
+.content-section h2, .content-section h3, .content-section h4 {
+  font-family: "Roboto", sans-serif;
   font-size: 1.625em;
 }
 .content-section p {
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
 }
 
@@ -9071,6 +9072,24 @@ html {
 
 .banner-two {
   background-image: url("/assets/image/banner2.jpg");
+}
+
+.content-banner {
+  padding: 34px 0;
+}
+.content-banner h2, .content-banner h3, .content-banner h4 {
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -4px;
+}
+.content-banner h2:before, .content-banner h3:before, .content-banner h4:before {
+  display: none;
+}
+.content-banner h2:after, .content-banner h3:after, .content-banner h4:after {
+  display: none;
 }
 
 header {
@@ -9205,8 +9224,8 @@ header {
   transition: all 0.2s ease-in-out;
 }
 .navMenu.compact .navMenu--list li a.active {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .navMenu.compact .navMenu--list li a.active:after {
   content: "";
@@ -9214,8 +9233,11 @@ header {
   height: 3px;
   background: #d39641;
   position: absolute;
-  bottom: -22px;
+  bottom: -23px;
   left: 0;
+}
+.navMenu.compact .btn-menustick {
+  display: block;
 }
 
 .navMenu--list {
@@ -9251,6 +9273,26 @@ header {
 }
 .navMenu--item a:hover, .navMenu--item a.active {
   color: #d39641;
+}
+
+.btn-menustick {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: none;
+  background: #d39641;
+  border: 2px solid #d39641;
+  color: #fff;
+  padding: 8px 28px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+.btn-menustick:hover {
+  background: transparent;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .animated-section-about {
@@ -9293,6 +9335,12 @@ header {
   overflow: hidden;
 }
 .timeline li:first-child:before {
+  display: none;
+}
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+.timeline li:last-child:after {
   display: none;
 }
 .timeline li:before {
@@ -9467,4 +9515,113 @@ header {
 
 .parceiras {
   margin-top: 50px;
+}
+
+.section-contato {
+  padding-bottom: 0;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0 auto;
+  width: 270px;
+}
+.social-list li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.social-list li a {
+  display: block;
+  background: #f4f4f4;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+}
+.social-list li a:hover.facebook {
+  background: #3a5795;
+  transition: all 0.1s ease-in-out;
+}
+.social-list li a:hover.facebook i {
+  color: #fff;
+}
+.social-list li a:hover.twitter {
+  background: #55acee;
+  transition: all 0.1s ease-in-out;
+}
+.social-list li a:hover.twitter i {
+  color: #fff;
+}
+.social-list li a:hover.github {
+  background: #222;
+  transition: all 0.1s ease-in-out;
+}
+.social-list li a:hover.github i {
+  color: #fff;
+}
+.social-list li a i {
+  font-size: 1.875em;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  display: block;
+  letter-spacing: -1px;
+  line-height: 50px;
+  color: #222;
+}
+
+footer {
+  background: #f4f4f4;
+  margin-top: 150px;
+  height: 340px;
+  border-bottom: 5px solid #d39641;
+}
+
+.logo-footer {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+}
+.logo-footer img {
+  position: relative;
+  top: -40px;
+}
+
+.content-footer {
+  text-align: center;
+  position: relative;
+}
+.content-footer a {
+  color: #d39641;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75em;
+  font-weight: 200;
+  letter-spacing: -2px;
+}
+.content-footer a span {
+  position: relative;
+  top: -2px;
+}
+.content-footer a:hover {
+  font-weight: 400;
+}
+.content-footer p {
+  margin-top: 80px;
+  font-family: "Roboto", sans-serif;
+}
+.content-footer p:before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: #222;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  opacity: 0.4;
 }
