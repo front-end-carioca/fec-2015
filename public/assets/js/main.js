@@ -9309,7 +9309,7 @@ Fec.IndexRoute = (function() {
 			e.preventDefault();
 
 			if($('body').hasClass('hidden')){
-				$('body').removeClass('hidden')
+				$('body').removeClass('hidden');
 			}
 			var href = $(this).attr("href"),
 			parent = $(this),
@@ -9349,7 +9349,7 @@ Fec.IndexRoute = (function() {
 	IndexRoute.fn.googleMaps = function(args) {
 		var mapCanvas = document.getElementById('map-canvas');
 		var mapOptions = {
-			center: new google.maps.LatLng(-22.9499471, -43.1809351),
+			center: new google.maps.LatLng(-22.904918, -43.178072),
 			zoom: 13,
 			scrollwheel: false
 		}
@@ -9358,7 +9358,6 @@ Fec.IndexRoute = (function() {
 	
 	return IndexRoute;
 })();
-
 Fec.Application = (function() {
 	function Application(container) {
 		this.container = $(container);
