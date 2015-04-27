@@ -9009,7 +9009,7 @@ html {
 }
 
 .content-section {
-  width: 450px;
+  width: 505px;
   margin: 0 auto;
   margin-top: 50px;
   color: #455a64;
@@ -9414,6 +9414,18 @@ header {
   display: inline-block;
   vertical-align: middle;
 }
+.timeline li .speaker-icon:before {
+  content: "";
+  background: #d39641;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  z-index: 1;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 .timeline li .box-speaker-media {
   display: inline-block;
   position: relative;
@@ -9482,6 +9494,10 @@ header {
 .content-parceiras {
   overflow: hidden;
   margin-top: 50px;
+}
+.content-parceiras p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .patrocinio-column {
