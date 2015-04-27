@@ -1538,7 +1538,8 @@ select {
   }
 
   .large-3 {
-    width: 25%;
+    width: 19%;
+    margin-left: 10px;
   }
 
   .large-4 {
@@ -9532,6 +9533,10 @@ header {
   width: 100%;
   max-width: 150px;
   margin: 0 auto;
+}
+
+.apoio-column {
+  border: #d39641 3px solid;
 }
 
 .parceiras {
