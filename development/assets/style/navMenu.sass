@@ -1,0 +1,82 @@
+.navMenu
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 9
+	&.compact
+		max-width: inherit
+		background: linear-gradient(rgba(23, 27, 35, 0.9), rgba(23, 27, 35, 0.9))
+		-webkit-animation-duration: 1s
+		animation-duration: 1s
+		-webkit-animation-fill-mode: both
+		animation-fill-mode: both
+		.navMenu--list
+			padding: 20px 0
+			&:after
+				display: none
+			li
+				a
+					position: relative
+					-webkit-transition: all .2s ease-in-out
+					transition: all .2s ease-in-out
+					&.active
+						-webkit-transition: all .3s ease-in-out
+						transition: all .3s ease-in-out
+						&:after
+							content: ""
+							width: 100%
+							height: 3px
+							background: #d39641
+							position: absolute
+							bottom: -23px
+							left: 0
+		.btn-menustick
+			display: block
+
+.navMenu--list
+	margin: 0 auto
+	padding: 50px 0
+	list-style: none
+	width: 680px
+	position: relative
+	&:after
+		content: ""
+		display: block
+		width: 85%
+		height: 1px
+		background: #fff
+		margin: 0 auto
+		opacity: .6
+		position: relative
+		top: 45px
+
+.navMenu--item
+	display: inline-block
+	a
+		font-family: 'Roboto', sans-serif
+		font-size: em(15px)
+		font-weight: 300
+		padding: 0 20px
+		text-decoration: none
+		color: #fff
+		cursor: pointer
+		&:hover, &.active
+			color: #d39641
+
+.btn-menustick
+	position: absolute
+	top: 10px
+	right: 20px
+	display: none
+	background: #d39641
+	border: 2px solid #d39641
+	color: #fff
+	padding: 8px 28px
+	transition: all .2s ease-in-out
+	-webkit-transition: all .2s ease-in-out
+	text-transform: uppercase
+	&:hover
+		background: transparent
+		color: #fff
+		transition: all .2s ease-in-out
+		-webkit-transition: all .2s ease-in-out

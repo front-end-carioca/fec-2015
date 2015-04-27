@@ -1,0 +1,122 @@
+.section-programacao
+	position: relative
+
+.content-programacao
+	margin-top: 80px
+
+.timeline
+	list-style: none
+	margin: 40px 0 0
+	padding: 0 15px
+	position: relative
+	color: #222
+	font-family: 'Lato', sans-serif
+	
+	li
+		border: 0
+		margin: 0
+		padding: 50px 50px 50px 20px
+		position: relative
+		text-align: left
+		overflow: hidden
+		&:first-child
+			&:before
+				display: none
+		
+		&:last-child
+			padding-bottom: 0
+			&:after
+				display: none
+
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 50%
+			height: 45px
+			width: 3px
+			border-left: 2px dashed rgba(0,0,0,.15)
+
+		&:after
+			position: absolute
+			content: ""
+			top: 80px
+			left: 50%
+			height: 100%
+			width: 3px
+			border-left: 2px dashed rgba(0,0,0,.15)
+
+		.box-talk
+			position: relative
+			float: right
+			width: 50%
+			padding-left: 60px
+			&:before
+				content: ""
+				background: #d39641
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 6px
+				left: 10px
+				z-index: 1
+				-webkit-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+		.talk-time
+			margin: 0
+			font-weight: 800
+
+		.sub-title
+			font-size: em(18px)
+			font-weight: 800
+			margin: 0 0 20px
+			letter-spacing: 1.5px
+			text-transform: uppercase
+
+		p:last-child
+			margin-bottom: 0
+
+		.box-speaker
+			float: left
+			width: 50%
+			padding-right: 25px
+			text-align: right
+			p
+				margin: 0 0 5px
+				a
+					color: #d39641
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+				i
+					display: inline-block
+					vertical-align: middle
+		
+		.speaker-icon
+			&:before
+				content: ""
+				background: #d39641
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 6px
+				left: 10px
+				z-index: 1
+				-webkit-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+
+		.box-speaker-media
+			display: inline-block
+			position: relative
+			margin-bottom: 20px
+			max-width: 150px
+			-webkit-transition: all .3s ease
+			-moz-transition: all .3s ease
+			-o-transition: all .3s ease
+			-ms-transition: all .3s ease
+			transition: all .3s ease
+			border: #d39641 5px solid
+			margin: 0 5px 10px
+			img
+				display: inline-block
+				vertical-align: bottom
