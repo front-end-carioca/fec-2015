@@ -8954,6 +8954,10 @@ html {
   font-size: 16px;
 }
 
+.sorteio {
+  color: #fff !important;
+}
+
 .hidden {
   overflow: hidden;
 }
