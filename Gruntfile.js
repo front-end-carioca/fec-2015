@@ -101,7 +101,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default', function(){
-		grunt.task.run(['watch']);
+		grunt.task.run(['connect','watch']);
 	});
 
 	grunt.registerTask('server', function(name){
