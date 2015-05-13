@@ -9199,8 +9199,9 @@ header {
   margin-left: 15px;
 }
 .intro-actions a:hover {
-  background: #fff;
-  color: #000;
+  background: #d39641;
+  border: 1px solid #d39641;
+  color: #fff;
   transition: 0.2s ease-in-out;
 }
 
