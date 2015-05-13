@@ -1,4 +1,4 @@
-## Front-end Carioca - 2ºEdição
+## Front-end Carioca - 2º Edição
 
 ![Cover](https://scontent-gru.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10945516_446559562158170_1826444704075673067_n.png?oh=6c98ae69e529f183af95b554f532d9cf&oe=55DEA95E)
 
@@ -10,25 +10,29 @@ Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte 
 
 ***Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:***
 
-1 - Fork o projeto e logo após dê um clone.
+1 - Fork o projeto e logo após dê um clone
 
-2 - Acesse a pasta do projeto e baixe os módulos do NPM: 
+`git clone [URL DO REPOSITÓRIO]`
+
+2 - Acesse a pasta do projeto
+
+`cd [NOME DA PASTA]`
+
+3 - Baixe os módulos do NPM
 
 `npm install`
 
-3 - Agora instale as dependencias do bower: 
+4 - Agora instale as dependencias do bower
 
 `bower install`
 
-4 - Inicie o Servidor:
+5 - Inicie o Servidor
 
 `npm start`
 
-5 - Inicie o Grunt:
+6 - Inicie o Grunt
 
 `grunt watch`
-
-OBS. Suas alterações devem ser feitas na path development. por fim, nos envie seu PR ;)
 
 ## Tecnologias e conceitos aplicados
 
