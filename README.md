@@ -10,27 +10,27 @@ Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte 
 
 ***Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:***
 
-1 - Fork o projeto e logo após dê um clone.
+1 - Fork o projeto e logo após dê um clone
 
 `git clone [URL DO REPOSITÓRIO]`
 
 2 - Acesse a pasta do projeto
 
-`cd pasta do projeto`
+`cd [NOME DA PASTA]`
 
-3 - Baixe os módulos do NPM:
+3 - Baixe os módulos do NPM
 
 `npm install`
 
-4 - Agora instale as dependencias do bower:
+4 - Agora instale as dependencias do bower
 
 `bower install`
 
-5 - Inicie o Servidor:
+5 - Inicie o Servidor
 
 `npm start`
 
-6 - Inicie o Grunt:
+6 - Inicie o Grunt
 
 `grunt watch`
 
