@@ -1544,7 +1544,8 @@ select {
   }
 
   .large-3 {
-    width: 25%;
+    width: 19%;
+    margin-left: 10px;
   }
 
   .large-4 {
