@@ -6,7 +6,7 @@
 
 ## Quer ajudar?
 
-Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte do nosso time, se você está interessado em ajudar e saber o que rola nos bastidores do evento com nossos convidados, fique atento, pois iremos disponibilizar em nossas redes sociais essa chance a vocês!
+Neste ano o Front-end Carioca estará recrutando voluntários para fazer parte do nosso time, se você está interessado em ajudar e saber o que rola nos bastidores do evento com nossos convidados, fique atento, pois iremos disponibilizar em nossas redes sociais essa chance a vocês!
 
 ***Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:***
 
