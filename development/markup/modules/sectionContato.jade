@@ -5,18 +5,18 @@ mixin sectionContato()
 		.content-section
 			ul.social-list
 				li
-					a(href="https://www.facebook.com/frontendcarioca", class="facebook", target="_blank")
-						i.icon-social-facebook
+					a(href="https://www.facebook.com/frontendcarioca", class="facebook", target="_blank", aria-label="Curta nossa página no facebook")
+						i(class="icon-social-facebook", aria-hidden="true")
 				li
-					a(href="https://twitter.com/frontendcarioca", class="twitter", target="_blank")
-						i.icon-social-twitter
+					a(href="https://twitter.com/frontendcarioca", class="twitter", target="_blank", aria-label="Nos siga no twitter")
+						i(class="icon-social-twitter", aria-hidden="true")
 				li
-					a(href="https://github.com/front-end-carioca", class="github", target="_blank")
-						i.icon-social-github
+					a(href="https://github.com/front-end-carioca", class="github", target="_blank", aria-label="Github do Front end Carioca")
+						i(class="icon-social-github", aria-hidden="true")
 	footer
 		.row
 			.logo-footer
-				img(src="assets/image/logo-footer.png", alt="logo front end carioca")
+				img(src="assets/image/logo-footer.png", alt="Front end Carioca")
 			.content-footer
 				a(href="mailto:contato@frontendcarioca.com.br", class="email-contact")!="CONTATO<span>@</span>FRONTENDCARIOCA.COM.BR"
 				p="© 2014 / 2015 - FRONT END CARIOCA. TODOS OS DIREITOS RESERVADOS."

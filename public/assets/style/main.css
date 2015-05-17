@@ -9767,7 +9767,7 @@ header {
 .patrocinio-column {
   margin-top: 50px;
 }
-.patrocinio-column h4 {
+.patrocinio-column h3 {
   margin: 0;
   text-align: center;
   font-size: 1.375em;
@@ -9776,7 +9776,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.patrocinio-column h4:after {
+.patrocinio-column h3:after {
   content: "";
   display: block;
   width: 40px;
