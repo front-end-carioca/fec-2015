@@ -13,7 +13,6 @@ module.exports = function(grunt) {
 				options : {
 					hostname : 'localhost',
 					port: 8080,
-					keepalive: true,
 					open: true,
 					base: 'public/'
 				}
@@ -101,7 +100,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default', function(){
-		grunt.task.run(['watch']);
+		grunt.task.run(['connect','watch']);
 	});
 
 	grunt.registerTask('server', function(name){
