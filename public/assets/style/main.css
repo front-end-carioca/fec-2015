@@ -9025,6 +9025,11 @@ html {
   color: #455a64;
   text-align: justify;
 }
+@media only screen and (max-width: 641px) {
+  .content-section {
+    width: 85%;
+  }
+}
 .content-section h2, .content-section h3, .content-section h4 {
   font-family: "Roboto", sans-serif;
   font-size: 1.625em;
@@ -9049,6 +9054,28 @@ html {
   font-style: italic;
   margin: 0;
   padding: 130px 180px;
+}
+@media only screen and (max-width: 1240px) {
+  .banner h2, .banner h3, .banner h4 {
+    padding: 130px 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .banner h2, .banner h3, .banner h4 {
+    font-size: 3.4375em;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .banner h2, .banner h3, .banner h4 {
+    padding: 155px 0;
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .banner h2, .banner h3, .banner h4 {
+    padding: 100px 0;
+    font-size: 1.875em;
+  }
 }
 .banner h2:before, .banner h3:before, .banner h4:before {
   content: "";
@@ -9155,7 +9182,17 @@ header {
 }
 @media only screen and (max-width: 641px) {
   .wrapper-intro {
+    margin-top: 45%;
+  }
+}
+@media screen and (max-width: 320px), screen and (max-height: 568px) {
+  .wrapper-intro {
     margin-top: 35%;
+  }
+}
+@media screen and (max-height: 320px) {
+  .wrapper-intro {
+    margin-top: 15%;
   }
 }
 
@@ -9168,6 +9205,11 @@ header {
 @media only screen and (max-width: 641px) {
   .intro-logo {
     width: 280px;
+  }
+}
+@media screen and (max-height: 320px) {
+  .intro-logo {
+    width: 200px;
   }
 }
 .intro-logo img {
@@ -9232,7 +9274,11 @@ header {
 }
 @media only screen and (max-width: 641px) {
   .navMenu {
-    background: linear-gradient(rgba(23, 27, 35, 0.2), rgba(23, 27, 35, 0.2));
+    background: linear-gradient(rgba(23, 27, 35, 0.9), rgba(23, 27, 35, 0.9));
+    -webkit-box-shadow: 0px -3px 15px 2px rgba(23, 27, 35, 0.9);
+    -moz-box-shadow: 0px -3px 15px 2px rgba(23, 27, 35, 0.9);
+    -o-box-shadow: 0px -3px 15px 2px rgba(23, 27, 35, 0.9);
+    box-shadow: 0px -3px 15px 2px rgba(23, 27, 35, 0.9);
     height: 50px;
     z-index: 10;
   }

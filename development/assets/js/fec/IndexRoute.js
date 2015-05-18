@@ -75,7 +75,7 @@ Fec.IndexRoute = (function() {
 			$('body').removeClass('hidden');
 			clearTimeout(timeBody);
 			self.googleMaps();
-		}, 1000);
+		}, 500);
 	};
 
 	IndexRoute.fn.animateSvg = function() {

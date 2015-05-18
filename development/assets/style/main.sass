@@ -103,6 +103,9 @@ body
 	margin-top: 50px
 	color: #455a64
 	text-align: justify
+	@media only screen and (max-width: 641px)
+		width: 85%
+
 	h2, h3, h4
 		font-family: 'Roboto', sans-serif
 		font-size: em(26px)
@@ -124,6 +127,20 @@ body
 		font-style: italic
 		margin: 0
 		padding: 130px 180px
+		@media only screen and (max-width: 1240px)
+			padding: 130px 0
+
+		@media only screen and (max-width: 900px)
+			font-size: em(55px)
+
+		@media only screen and (max-width: 690px)
+			padding: 155px 0
+			font-size: em(40px)
+
+		@media only screen and (max-width: 520px)
+			padding: 100px 0
+			font-size: em(30px)
+
 		&:before
 			content: ""
 			display: block
