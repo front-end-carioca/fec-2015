@@ -2,7 +2,6 @@ header
 	width: 100%
 	height: 1000px
 	min-height: 700px
-	background: linear-gradient(rgba(23, 27, 35, 0.7), rgba(23, 27, 35, 0.7))
 	position: fixed
 	top: 0
 	z-index: 8
@@ -43,12 +42,17 @@ header
 .wrapper-intro
 	position: relative
 	margin-top: 180px
+	@media only screen and (max-width: 641px)
+		margin-top: 35%
 
 .intro-logo
 	width: 340px
 	margin: 0 auto
 	position: relative
 	pointer-events: none
+	@media only screen and (max-width: 641px)
+		width: 280px
+
 	img
 		position: relative
 		pointer-events: none
@@ -68,6 +72,8 @@ header
 	display: block
 	margin-top: 45px
 	text-align: center
+	@media only screen and (max-width: 641px)
+		display: none
 	a
 		font-family: 'Roboto', sans-serif
 		padding: 10px
