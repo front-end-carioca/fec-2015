@@ -14,17 +14,10 @@ Fec.IndexRoute = (function() {
 	IndexRoute.fn.run = function(cookie) {
 		var cookie = $.parseJSON(cookie);
 
-		window.onload = function() {
-			setTimeout(function() {
-				$('body').addClass('hidden');
-			}, 15);
-		};
-
 		this.heightHeader();
-		this.scrollParalax();
-		this.bodyHiddenTrue();
 		this.animateSvg();
 		this.menuAnchor();
+		this.googleMaps();
 
 		if(cookie === true){
 			$('.section-about').addClass('animated-section-about-true slideInUp-Header');
@@ -33,17 +26,17 @@ Fec.IndexRoute = (function() {
 				return false;
 			}
 			this.transition();
-			this.bodyHidden();
 		}
 
 	};
 
 	IndexRoute.fn.transition = function() {
 		$.cookie('animation', 'true', { expires: 7 });
-		$('.intro-logo').addClass('fadeInUp-Header');
-		$('.animated-datails').addClass('pulse-slow');
-		$('.intro-actions a').addClass('zoomIn-Header');
-		$('.section-about').addClass('animated-section-about slideInUp-Header');
+		this.container.find('.banner').addClass('attachment-inherit');
+		this.container.find('.intro-logo').addClass('fadeInUp-Header');
+		this.container.find('.animated-datails').addClass('pulse-slow');
+		this.container.find('.intro-actions a').addClass('zoomIn-Header');
+		this.container.find('.section-about').addClass('animated-section-about slideInUp-Header');
 	};
 
 	IndexRoute.fn.heightHeader = function() {
@@ -54,28 +47,6 @@ Fec.IndexRoute = (function() {
 		header.css('height', $(window).height());
 		textura.css('height', $(window).height());
 		space.css('height', $(window).height());
-	};
-
-	IndexRoute.fn.scrollParalax = function() {
-		$('header').parallax({imageSrc: '/assets/image/bg-header3.jpg'});
-	};
-
-	IndexRoute.fn.bodyHidden = function() {
-		var self = this;
-		var timeBody = setTimeout(function() {
-			$('body').removeClass('hidden');
-			clearTimeout(timeBody);
-			self.googleMaps();
-		}, 3300);
-	};
-
-	IndexRoute.fn.bodyHiddenTrue = function() {
-		var self = this;
-		var timeBody = setTimeout(function() {
-			$('body').removeClass('hidden');
-			clearTimeout(timeBody);
-			self.googleMaps();
-		}, 500);
 	};
 
 	IndexRoute.fn.animateSvg = function() {
