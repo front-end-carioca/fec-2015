@@ -9746,6 +9746,9 @@ header {
   line-height: 50px;
   color: #222;
 }
+.social-list li a i:before {
+  font-size: inherit;
+}
 
 footer {
   background: #f4f4f4;
