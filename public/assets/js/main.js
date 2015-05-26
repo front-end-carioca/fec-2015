@@ -9467,12 +9467,21 @@ Fec.IndexRoute = (function() {
 
 	IndexRoute.fn.googleMaps = function(args) {
 		var mapCanvas = document.getElementById('map-canvas');
+		var myLatlng = new google.maps.LatLng(-22.904918, -43.178072);
+
 		var mapOptions = {
-			center: new google.maps.LatLng(-22.904918, -43.178072),
+			center: myLatlng,
 			zoom: 13,
 			scrollwheel: false
 		}
+
 		var map = new google.maps.Map(mapCanvas, mapOptions);
+
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: 'Hello World!'
+		});
 	};
 	
 	return IndexRoute;

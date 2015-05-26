@@ -8924,6 +8924,7 @@ th.hide-for-touch {
 
 .icon-social-github:before {
   content: "";
+  font-size: 19px;
 }
 
 .icon-social-linkedin:before {
@@ -9629,6 +9630,10 @@ header {
 .description-map p {
   margin-top: 0;
   font-size: 0.875em;
+}
+.description-map a {
+  color: #222;
+  display: block;
 }
 
 .content-patrocinio {
