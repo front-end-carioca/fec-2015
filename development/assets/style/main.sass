@@ -75,6 +75,12 @@ body
 		text-align: right
 		margin: 0
 		position: relative
+		@media only screen and (max-width: 900px)
+			font-size: em(30px)
+
+		@media only screen and (max-width: 690px)
+			font-size: em(25px)
+
 		&:after
 			content: ""
 			display: block
@@ -86,6 +92,11 @@ body
 			left: -30px
 			-webkit-transform: rotate(-45deg)
 			transform: rotate(-45deg)
+			@media only screen and (max-width: 900px)
+				top: 17px
+			@media only screen and (max-width: 690px)
+				top: 13px
+
 		&:before
 			content: ""
 			display: block
@@ -97,6 +108,10 @@ body
 			right: -30px
 			-webkit-transform: rotate(-45deg)
 			transform: rotate(-45deg)
+			@media only screen and (max-width: 900px)
+				top: 17px
+			@media only screen and (max-width: 690px)
+				top: 13px
 
 .content-section
 	width: 505px
@@ -122,6 +137,9 @@ body
 	height: 50vh
 	min-height: 366px
 	text-align: center
+	@media only screen and (max-width: 690px)
+		min-height: 200px
+		height: 200px
 	h2, h3, h4
 		color: #fff
 		font-family: 'Lato', sans-serif
@@ -137,12 +155,12 @@ body
 			font-size: em(55px)
 
 		@media only screen and (max-width: 690px)
-			padding: 155px 0
-			font-size: em(40px)
+			padding: 77px 0
+			font-size: em(30px)
 
 		@media only screen and (max-width: 520px)
-			padding: 100px 0
-			font-size: em(30px)
+			padding: 80px 0
+			font-size: em(25px)
 
 		&:before
 			content: ""
