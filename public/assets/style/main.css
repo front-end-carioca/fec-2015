@@ -9085,6 +9085,11 @@ html {
     height: 200px;
   }
 }
+@media only screen and (max-width: 641px) {
+  .banner {
+    background-attachment: inherit;
+  }
+}
 .banner h2, .banner h3, .banner h4 {
   color: #fff;
   font-family: "Lato", sans-serif;
@@ -9179,6 +9184,17 @@ header {
   top: 0;
   z-index: 8;
 }
+@media only screen and (min-width: 320px) and (max-height: 630px) {
+  header {
+    min-height: 590px;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 641px) {
+  header {
+    min-height: 500px;
+  }
+}
 
 .animated-logo {
   -webkit-animation-duration: 1.3s;
@@ -9217,24 +9233,36 @@ header {
 .space-top {
   height: 1000px;
 }
+@media only screen and (min-width: 320px) and (max-height: 630px) {
+  .space-top {
+    display: none;
+  }
+}
 
 .wrapper-intro {
   position: relative;
   margin-top: 180px;
 }
-@media only screen and (max-width: 641px) {
+@media only screen and (min-width: 320px) and (max-height: 630px) {
   .wrapper-intro {
-    margin-top: 45%;
+    margin-top: inherit;
+    padding-top: 15%;
   }
 }
-@media screen and (max-width: 320px), screen and (max-height: 568px) {
+
+@media only screen and (min-width: 320px) and (max-height: 630px) and (max-width: 880px) {
   .wrapper-intro {
-    margin-top: 35%;
+    padding-top: 140px;
   }
 }
-@media screen and (max-height: 320px) {
+@media only screen and (min-width: 320px) and (max-height: 630px) and (max-width: 641px) {
   .wrapper-intro {
-    margin-top: 15%;
+    padding-top: 120px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-height: 630px) and (min-width: 881px) {
+  .wrapper-intro {
+    padding-top: 125px;
   }
 }
 
@@ -9314,6 +9342,18 @@ header {
   right: 0;
   z-index: 9;
 }
+@media only screen and (min-width: 320px) and (max-height: 630px) {
+  .navMenu {
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-height: 630px) and (max-width: 641px) {
+  .navMenu {
+    position: fixed;
+  }
+}
+
 @media only screen and (max-width: 641px) {
   .navMenu {
     background: linear-gradient(rgba(23, 27, 35, 0.9), rgba(23, 27, 35, 0.9));
@@ -9475,6 +9515,11 @@ header {
   position: absolute;
   top: -110px;
   width: 100%;
+}
+@media only screen and (max-height: 720px) {
+  .section-about #Layer_1 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1195px) {
   .section-about #Layer_1 {
@@ -9735,15 +9780,33 @@ header {
   margin: 0 auto;
   opacity: 0.1;
 }
+@media only screen and (max-width: 480px) {
+  .description-map:after {
+    width: 50%;
+    position: relative;
+    top: 20px;
+  }
+}
 .description-map h3 {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 1.125em;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 480px) {
+  .description-map h3 {
+    font-size: 1em;
+  }
+}
 .description-map p {
   margin-top: 0;
   font-size: 0.875em;
+}
+@media only screen and (max-width: 480px) {
+  .description-map p {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 .description-map a {
   color: #222;
@@ -9805,6 +9868,19 @@ header {
 
 .section-contato {
   padding-bottom: 0;
+}
+@media only screen and (max-width: 641px) {
+  .section-contato .title-section h2 {
+    font-size: 1.5625em;
+    width: 270px;
+    text-align: center;
+  }
+  .section-contato .title-section h2:before {
+    top: 33px;
+  }
+  .section-contato .title-section h2:after {
+    top: 33px;
+  }
 }
 
 .social-list {
@@ -9892,6 +9968,11 @@ footer {
   font-weight: 200;
   letter-spacing: -2px;
 }
+@media only screen and (max-width: 480px) {
+  .content-footer a {
+    font-size: 1.25em;
+  }
+}
 .content-footer a span {
   position: relative;
   top: -2px;
@@ -9902,6 +9983,14 @@ footer {
 .content-footer p {
   margin-top: 80px;
   font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width: 480px) {
+  .content-footer p {
+    font-size: 0.875em;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
 }
 .content-footer p:before {
   content: "";

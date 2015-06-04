@@ -1,5 +1,16 @@
 .section-contato
 	padding-bottom: 0
+	@media only screen and (max-width: 641px)
+		.title-section
+			h2
+				font-size: em(25px)
+				width: 270px
+				text-align: center
+				&:before
+					top: 33px
+				&:after
+					top: 33px
+
 .social-list
 	list-style: none
 	margin: 0 auto
@@ -69,6 +80,9 @@ footer
 		font-size: em(28px)
 		font-weight: 200
 		letter-spacing: -2px
+		@media only screen and (max-width: 480px)
+			font-size: em(20px)
+
 		span
 			position: relative
 			top: -2px
@@ -77,6 +91,12 @@ footer
 	p
 		margin-top: 80px
 		font-family: 'Roboto', sans-serif
+		@media only screen and (max-width: 480px)
+			font-size: em(14px)
+			width: 280px
+			margin: 0 auto
+			margin-top: 80px
+
 		&:before
 			content: ""
 			display: block

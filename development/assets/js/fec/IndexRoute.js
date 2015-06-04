@@ -2,10 +2,13 @@ Fec.IndexRoute = (function() {
 	function IndexRoute(container) {
 		this.container = container;
 
-		$.stellar({
-			hideDistantElements: false,
-			verticalOffset: 0
-		});
+
+		if($(window).height > 580){
+			$.stellar({
+				hideDistantElements: false,
+				verticalOffset: 0
+			});
+		}
 		
 	}
 
