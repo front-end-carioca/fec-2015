@@ -16,7 +16,7 @@ Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte 
 
 `npm install`
 
-3 - Agora instale as dependencias do bower:
+3 - Agora instale as dependencias do bower: (Caso use)
 
 `bower install`
 
@@ -27,26 +27,6 @@ Neste ano o Fron-end Carioca vai estar recrutando voluntários para fazer parte 
 5 - Inicie o Grunt:
 
 `grunt watch`
-
-6 - Faça suas alterações na path development.
-
-7 - Crie uma nova branch para a alteração com o nome development:
-
-`git checkout -b development`
-
-8 - Adicione suas alterações ao Stage:
-
-`git add .`
-
-9 - Commit suas alterações:
-
-`git commit -m 'seu commit'`
-
-10 - De um push:
-
-`git push origin development`
-
-11 - Por fim, nos envie seu PR ;)
 
 ## Tecnologias e conceitos aplicados
 
