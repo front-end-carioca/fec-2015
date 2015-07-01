@@ -13,7 +13,7 @@ mixin sectionProgramacao()
 					time.talk-time="08:40 - 9:20"
 					h4.sub-title="Coffee Break"
 					p="Antes do evento começar, aproveite para tomar um café, fazer novas amizades e rever os amigos."
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Ciro Nunes', src='https://avatars2.githubusercontent.com/u/469908?v=3&s=400')
@@ -35,7 +35,7 @@ mixin sectionProgramacao()
 					p="Nosso amigo Ciro Nunes vai conduzir o evento até o final, apresentando cada palestrante, batendo um papo com eles e o resto você acompanha de perto."
 			
 			
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Willian Justen', src='assets/image/will.jpg')
@@ -57,7 +57,7 @@ mixin sectionProgramacao()
 					p="Nessa palestra eu irei mostrar como o SVG pode melhorar e modificar as experiências do usuário em um projeto e como você já pode sair da palestra utilizando."
 		
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Diego Ramos', src='assets/image/diegoramos.jpg')
@@ -65,16 +65,20 @@ mixin sectionProgramacao()
 					h3.sub-title Diego Ramos
 					|     
 					p
-						| Sênior Developer at 
+						| Senior Developer at 
 						a(href='http://www.bematech.com.br/', target='_blank') Bematech
 					|     
-							
+					p
+						i.icon-social-github
+						|       
+						a.hover.hover-3d.speaker-link(href='https://github.com/rdiego26', target='_blank')
+							span(data-title='@rdiego26') @rdiego26		
 				.box-talk
 					time.talk-time="10:10 - 10:50"
-					h4.sub-title="Em definição"
-					p=""
+					h4.sub-title="Hardening Node"
+					p="Nessa palestra iremos ver algumas dicas de como tornar sua aplicação NodeJS mais segura antes de colocar em produção."
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Raphael Amorim', src='assets/image/raphael.jpeg')
@@ -95,7 +99,7 @@ mixin sectionProgramacao()
 					p="De maneira divertida e informativa irá abordar o desenvolvimento voltado para o open source. Como começar a contribuir? Qual a semântica ideal? Qual o peso da refatoração, linting, code review e testes? Com essa palestra mais força de vontade e dedicação você consegue liberar o dev star que existe dentro de você."
 
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Leo Balter', src='assets/image/leobalter.jpg')
@@ -113,8 +117,8 @@ mixin sectionProgramacao()
 							span(data-title='@leobalter') @leobalter		
 				.box-talk
 					time.talk-time="11:30 - 12:10"
-					h4.sub-title="Em definição"
-					p=""		
+					h4.sub-title="Ambitious Web Applications"
+					p="Em poucos tempo uma aplicação pronta, robusta e testada. Pela linha de comando, um passeio pelo Ember-CLI utilizando uma base de dados servida via Endpoints para criar uma aplicação completa feita com JS."		
 
 			li
 				.box-talk
@@ -122,7 +126,7 @@ mixin sectionProgramacao()
 					h4.sub-title="Pausa para o Almoço"
 
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Jaydson Gomes', src='assets/image/jaydson.jpg')
@@ -130,7 +134,7 @@ mixin sectionProgramacao()
 					h3.sub-title Jaydson Gomes
 					|     
 					p
-						| Sênior Front-end Enginner at 
+						| Senior Front-end Enginner at 
 						a(href='http://www.terra.com.br/', target='_blank') Portal Terra
 					|     
 					p
@@ -143,7 +147,7 @@ mixin sectionProgramacao()
 					h4.sub-title="Em definição"
 					p=""		
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do Pedro Nauck', src='assets/image/pedro-nauck.jpg')
@@ -169,7 +173,7 @@ mixin sectionProgramacao()
 					time.talk-time="15:20 - 16:00"
 					h4.sub-title="Pausa para o Coffee Break"
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do palestrante', src='assets/image/default.jpg')
@@ -190,7 +194,7 @@ mixin sectionProgramacao()
 					h4.sub-title="Em definição"
 					p=""
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do palestrante', src='assets/image/default.jpg')
@@ -211,7 +215,7 @@ mixin sectionProgramacao()
 					h4.sub-title="Em definição"
 					p=""
 
-			li
+			li.li-speaker
 				.box-speaker
 					.box-speaker-media
 						img(alt='Foto do palestrante', src='assets/image/default.jpg')

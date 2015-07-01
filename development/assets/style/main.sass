@@ -18,6 +18,7 @@
 
 .icon-social-github:before
 	content: "\e601"
+	font-size: 19px
 
 .icon-social-linkedin:before
 	content: "\e602"
@@ -49,6 +50,10 @@ body
 .hidden
 	overflow: hidden
 
+.wrapper
+	@media only screen and (max-width: 641px)
+		overflow: hidden
+
 .wrapper-content-home
 	background: #fff
 	position: relative
@@ -70,6 +75,12 @@ body
 		text-align: right
 		margin: 0
 		position: relative
+		@media only screen and (max-width: 900px)
+			font-size: em(30px)
+
+		@media only screen and (max-width: 690px)
+			font-size: em(25px)
+
 		&:after
 			content: ""
 			display: block
@@ -77,10 +88,15 @@ body
 			height: 10px
 			background: #d39641
 			position: absolute
-			top: 24px
+			top: 20px
 			left: -30px
 			-webkit-transform: rotate(-45deg)
 			transform: rotate(-45deg)
+			@media only screen and (max-width: 900px)
+				top: 17px
+			@media only screen and (max-width: 690px)
+				top: 13px
+
 		&:before
 			content: ""
 			display: block
@@ -88,10 +104,14 @@ body
 			height: 10px
 			background: #d39641
 			position: absolute
-			top: 24px
+			top: 20px
 			right: -30px
 			-webkit-transform: rotate(-45deg)
 			transform: rotate(-45deg)
+			@media only screen and (max-width: 900px)
+				top: 17px
+			@media only screen and (max-width: 690px)
+				top: 13px
 
 .content-section
 	width: 505px
@@ -99,6 +119,9 @@ body
 	margin-top: 50px
 	color: #455a64
 	text-align: justify
+	@media only screen and (max-width: 641px)
+		width: 85%
+
 	h2, h3, h4
 		font-family: 'Roboto', sans-serif
 		font-size: em(26px)
@@ -107,11 +130,21 @@ body
 		font-size: em(16px)
 
 .banner
-	background-attachment: fixed
-	height: 50vh
-	background-position: center center
 	background-size: cover
+	background-attachment: fixed
+	background-repeat: no-repeat
+	background-position: center
+	width: 100%
+	height: 365px
 	text-align: center
+	display: table
+	@media only screen and (max-width: 690px)
+		min-height: 200px
+		height: 200px
+	
+	@media only screen and (max-width: 641px)
+		background-attachment: inherit
+
 	h2, h3, h4
 		color: #fff
 		font-family: 'Lato', sans-serif
@@ -119,7 +152,17 @@ body
 		font-weight: 200
 		font-style: italic
 		margin: 0
-		padding: 130px 180px
+		display: table-cell
+		vertical-align: middle
+		@media only screen and (max-width: 900px)
+			font-size: em(55px)
+
+		@media only screen and (max-width: 690px)
+			font-size: em(30px)
+
+		@media only screen and (max-width: 520px)
+			font-size: em(25px)
+
 		&:before
 			content: ""
 			display: block
@@ -140,7 +183,7 @@ body
 			margin: 0 auto
 
 @media screen and (-webkit-min-device-pixel-ratio:0)
-	.banner
+	.attachment-inherit
 		background-attachment: inherit
 
 .banner-one
