@@ -11,10 +11,10 @@ Fec.Application = (function() {
 
 	Application.fn.run = function(location) {
 	    var routeClass = this.routes[location.pathname];
-
 	    if (routeClass) {
+	    	var cookie = $.cookie('animation') == undefined ? false : true;
 	    	var route = new routeClass(this.container);
-	    	route.run();
+	    	route.run(cookie);
 	    }else{
 	    	location.pathname = '/';
 	    }

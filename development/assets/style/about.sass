@@ -6,8 +6,22 @@
 	-webkit-animation-delay: 1.6s
 	animation-delay: 1.6s
 
+.animated-section-about-true
+	-webkit-animation-duration: 1s
+	animation-duration: 1s
+	-webkit-animation-fill-mode: both
+	animation-fill-mode: both
+
 .section-about
 	#Layer_1
 		position: absolute
 		top: -110px
 		width: 100%
+		@media only screen and (max-height: 720px)
+			display: none
+		@media only screen and (max-width: 1195px)
+			top: -100px
+		@media only screen and (max-width: 870px)
+			top: -90px
+		@media only screen and (max-width: 641px)
+			display: none

@@ -1,5 +1,7 @@
 .section-programacao
 	position: relative
+	@media only screen and (max-width: 900px)
+		padding-bottom: 0
 
 .content-programacao
 	margin-top: 80px
@@ -19,6 +21,9 @@
 		position: relative
 		text-align: left
 		overflow: hidden
+		@media only screen and (max-width: 900px)
+			padding: 50px 10px 20px 20px
+
 		&:first-child
 			&:before
 				display: none
@@ -36,6 +41,8 @@
 			height: 45px
 			width: 3px
 			border-left: 2px dashed rgba(0,0,0,.15)
+			@media only screen and (max-width: 900px)
+				left: 0
 
 		&:after
 			position: absolute
@@ -45,12 +52,37 @@
 			height: 100%
 			width: 3px
 			border-left: 2px dashed rgba(0,0,0,.15)
+			@media only screen and (max-width: 900px)
+				left: 0
+		&.li-speaker
+			.box-talk
+				&:before
+					@media only screen and (max-width: 900px)
+						display: none
+			.box-speaker
+				@media only screen and (max-width: 900px)
+					&:before
+						content: ""
+						background: #d39641
+						width: 12px
+						height: 12px
+						position: absolute
+						top: 55px
+						left: -5px
+						z-index: 1
+						-webkit-transform: rotate(-45deg)
+						transform: rotate(-45deg)
 
 		.box-talk
 			position: relative
 			float: right
 			width: 50%
 			padding-left: 60px
+			@media only screen and (max-width: 900px)
+				width: 100%
+				padding-left: 0
+				float: left
+
 			&:before
 				content: ""
 				background: #d39641
@@ -62,6 +94,15 @@
 				z-index: 1
 				-webkit-transform: rotate(-45deg)
 				transform: rotate(-45deg)
+				@media only screen and (max-width: 900px)
+					left: -25px
+
+			@media only screen and (max-width: 690px)
+				.sub-title
+					font-size: em(14px)
+					margin-bottom: 10px
+				p
+					font-size: em(14px)	
 		.talk-time
 			margin: 0
 			font-weight: 800
@@ -72,6 +113,8 @@
 			margin: 0 0 20px
 			letter-spacing: 1.5px
 			text-transform: uppercase
+			@media only screen and (max-width: 690px)
+				font-size: em(16px)
 
 		p:last-child
 			margin-bottom: 0
@@ -81,6 +124,11 @@
 			width: 50%
 			padding-right: 25px
 			text-align: right
+			@media only screen and (max-width: 900px)
+				width: 100%
+				padding-right: 0
+				text-align: left
+				float: right
 			p
 				margin: 0 0 5px
 				a
@@ -117,6 +165,8 @@
 			transition: all .3s ease
 			border: #d39641 5px solid
 			margin: 0 5px 10px
+			@media only screen and (max-width: 900px)
+				margin: 0 0 10px
 			img
 				display: inline-block
 				vertical-align: bottom
