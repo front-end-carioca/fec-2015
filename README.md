@@ -22,7 +22,7 @@ Neste ano o Front-end Carioca estará recrutando voluntários para fazer parte d
 
 `npm install`
 
-4 - Agora instale as dependencias do bower
+4 - Agora instale as dependencias do bower: (Caso use)
 
 `bower install`
 
