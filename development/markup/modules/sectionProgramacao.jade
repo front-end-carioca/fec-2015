@@ -81,6 +81,27 @@ mixin sectionProgramacao()
 			li.li-speaker
 				.box-speaker
 					.box-speaker-media
+						img(alt='Foto do palestrante', src='assets/image/juarez.jpg')
+					|     
+					h3.sub-title Juarez Filho
+					|     
+					p
+						| Front-end Enginner at  
+						a(href='http://madewithlove.be', target='_blank') madewithlove
+					|     
+					p
+						i.icon-social-twitter
+						|       
+						a.hover.hover-3d.speaker-link(href='http://twitter.com/juarezpaf', target='_blank')
+							span(data-title='@juarezpaf') @juarezpaf
+				.box-talk
+					time.talk-time="10:50 - 11:30"
+					h4.sub-title="Ionic Adventures: Hybrid Mobile App Development Rocks"
+					p="O Ionic Framework tem tido um crescimento incrível na comunidade de desenvolvimento mobile mostrando que Desenvolvedores Web podem usar HTML5, CSS e JS para criar aplicativos híbridos de qualidade. Nessa palestra entramos numa jornada mostrando o potencial do Ionic Framework e o outras ferramentas que auxiliam na criação de aplicativos extraordinários."
+
+			li.li-speaker
+				.box-speaker
+					.box-speaker-media
 						img(alt='Foto do Willian Justen', src='assets/image/will.jpg')
 					|     
 					h3.sub-title Willian Justen (Biber)
@@ -95,9 +116,83 @@ mixin sectionProgramacao()
 						a.hover.hover-3d.speaker-link(href='https://twitter.com/Willian_justen', target='_blank')
 							span(data-title='@Willian_justen') @Willian_justen
 				.box-talk
-					time.talk-time="10:50 - 11:30"
+					time.talk-time="11:30 - 12:10"
 					h4.sub-title="Criando Novas Experiências com SVG"
 					p="Nessa palestra eu irei mostrar como o SVG pode melhorar e modificar as experiências do usuário em um projeto e como você já pode sair da palestra utilizando."
+
+			li
+				.box-talk
+					time.talk-time="12:10 - 14:00"
+					h4.sub-title="Pausa para o Almoço"
+			
+			li.li-speaker
+				.box-speaker
+					.box-speaker-media
+						img(alt='Foto do Pedro Nauck', src='assets/image/pedro-nauck.jpg')
+					|     
+					h3.sub-title Pedro Nauck
+					|     
+					p
+						| Front-end Enginner 
+						a(href='#', target='_blank')
+					|     
+					p
+						i.icon-social-twitter
+						|       
+						a.hover.hover-3d.speaker-link(href='https://twitter.com/pedronauck', target='_blank')
+							span(data-title='@pedronauck') @pedronauck
+				.box-talk
+					time.talk-time="14:00 - 14:40"
+					h4.sub-title="ReactJS: Keep simple. Everything is a component!"
+					p="Um dos maiores problemas ao desenvolver uma aplicação é como manter uma arquitetura que escale e ao mesmo tempo seja simples de dar manutenção. O ReactJS nasceu com um conceito muito forte para resolver isso: Manter a simplicidade. Faremos uma breve introdução à library e veremos como lidar com a criação de components para criar uma aplicação escalável e com alta performance."
+			
+			li.li-speaker
+				.box-speaker
+					.box-speaker-media
+						img(alt='Foto do palestrante', src='assets/image/ney.jpg')
+					|     
+					h3.sub-title Ney Simões
+					|     
+					p
+						| Desenvolvedor Mobile at  
+						a(href='http://www.ciandt.com/br-pt/', target='_blank') CI&T
+					|     
+					p
+						i.icon-social-twitter
+						|       
+						a.hover.hover-3d.speaker-link(href='https://twitter.com/ney_simoes', target='_blank')
+							span(data-title='@ney_simoes') @ney_simoes
+				.box-talk
+					time.talk-time="14:40 - 15:20"
+					h4.sub-title="Arquitetura CSS com pré-processadores"
+					p="Pensar na arquitetura CSS pode ser muitas vezes complicado, dispendioso e normalmente é visto como algo de pouca relevância. O depois de algumas milhares de linhas de código CSS deixa de ser algo bonito para se tornar o grande vilão de um projeto. Nessa palestra apresentarei soluções usando Smacss, OOCSS e BEM, mas sendo aplicado na realidade dos pré-processadores. POST: http://migre.me/qpWkA"
+
+
+			li
+				.box-talk
+					time.talk-time="15:20 - 15:50"
+					h4.sub-title="Pausa para o Coffee Break"
+			
+			li.li-speaker
+				.box-speaker
+					.box-speaker-media
+						img(alt='Foto do palestrante', src='assets/image/caio.jpg')
+					|     
+					h3.sub-title Caio Vaccaro
+					|     
+					p
+						| Web Enginner at 
+						a(href='https://www.hugeinc.com/', target='_blank') Huge Inc
+					|     
+					p
+						i.icon-social-twitter
+						|       
+						a.hover.hover-3d.speaker-link(href='https://twitter.com/caiovaccaro', target='_blank')
+							span(data-title='@caiovaccaro') @caiovaccaro
+				.box-talk
+					time.talk-time="16:00 - 16:40"
+					h4.sub-title="Javascript State of the Union"
+					p="Onde estamos e para onde estamos indo? Todos temos a sensação que o Javascript está dominando cada vez mais espaços, mas o que exatamente está acontecendo? Esta palestra abordará desde as diferentes soluções para aplicações cada vez maiores e mais complexas e também os diferentes usos da linguagem. De modularidade à arquitetura de aplicações, de servidor ao desktop, de immutable à aplicações isomórficas."
 
 			li.li-speaker
 				.box-speaker
@@ -115,15 +210,9 @@ mixin sectionProgramacao()
 						a.hover.hover-3d.speaker-link(href='https://twitter.com/raphamundi', target='_blank')
 							span(data-title='@raphamundi') @raphamundi
 				.box-talk
-					time.talk-time="11:30 - 12:10"
+					time.talk-time="16:40 - 17:20"
 					h4.sub-title="Como ser um Desenvolvedor transante?"
 					p="De maneira divertida e informativa irá abordar o desenvolvimento voltado para o open source. Como começar a contribuir? Qual a semântica ideal? Qual o peso da refatoração, linting, code review e testes? Com essa palestra mais força de vontade e dedicação você consegue liberar o dev star que existe dentro de você."
-
-
-			li
-				.box-talk
-					time.talk-time="12:10 - 13:50"
-					h4.sub-title="Pausa para o Almoço"
 
 
 			li.li-speaker
@@ -143,98 +232,10 @@ mixin sectionProgramacao()
 						a.hover.hover-3d.speaker-link(href='https://twitter.com/jaydson', target='_blank')
 							span(data-title='@jaydson') @jaydson
 				.box-talk
-					time.talk-time="14:00 - 14:40"
+					time.talk-time="17:20 - 18:00"
 					h4.sub-title="Futuro do Subjuntivo - Quando vós programardes JavaScript"
 					p="Quando eu falar sobre JavaScript, vós entendereis o que quero dizer. Quando tu aprenderes mais sobre JavaScript, serás recompensado. Quando nós estudarmos sobre o futuro do JavaScript, melhores desenvolvedores nos tornaremos. Quando vós programardes JavaScript, uma nova aplicação nascerá. Quando eles souberem sobre as novas features do JavaScript, abismados ficarão."
-
-			li.li-speaker
-				.box-speaker
-					.box-speaker-media
-						img(alt='Foto do Pedro Nauck', src='assets/image/pedro-nauck.jpg')
-					|     
-					h3.sub-title Pedro Nauck
-					|     
-					p
-						| Front-end Enginner 
-						a(href='#', target='_blank')
-					|     
-					p
-						i.icon-social-twitter
-						|       
-						a.hover.hover-3d.speaker-link(href='https://twitter.com/pedronauck', target='_blank')
-							span(data-title='@pedronauck') @pedronauck
-				.box-talk
-					time.talk-time="14:40 - 15:20"
-					h4.sub-title="ReactJS: Keep simple. Everything is a component!"
-					p="Um dos maiores problemas ao desenvolver uma aplicação é como manter uma arquitetura que escale e ao mesmo tempo seja simples de dar manutenção. O ReactJS nasceu com um conceito muito forte para resolver isso: Manter a simplicidade. Faremos uma breve introdução à library e veremos como lidar com a criação de components para criar uma aplicação escalável e com alta performance."
-
-			li
-				.box-talk
-					time.talk-time="15:20 - 16:00"
-					h4.sub-title="Pausa para o Coffee Break"
-
-			li.li-speaker
-				.box-speaker
-					.box-speaker-media
-						img(alt='Foto do palestrante', src='assets/image/juarez.jpg')
-					|     
-					h3.sub-title Juarez Filho
-					|     
-					p
-						| Front-end Enginner at  
-						a(href='http://madewithlove.be', target='_blank') madewithlove
-					|     
-					p
-						i.icon-social-twitter
-						|       
-						a.hover.hover-3d.speaker-link(href='http://twitter.com/juarezpaf', target='_blank')
-							span(data-title='@juarezpaf') @juarezpaf
-				.box-talk
-					time.talk-time="16:00 - 16:40"
-					h4.sub-title="Ionic Adventures: Hybrid Mobile App Development Rocks"
-					p="O Ionic Framework tem tido um crescimento incrível na comunidade de desenvolvimento mobile mostrando que Desenvolvedores Web podem usar HTML5, CSS e JS para criar aplicativos híbridos de qualidade. Nessa palestra entramos numa jornada mostrando o potencial do Ionic Framework e o outras ferramentas que auxiliam na criação de aplicativos extraordinários."
-
-			li.li-speaker
-				.box-speaker
-					.box-speaker-media
-						img(alt='Foto do palestrante', src='assets/image/caio.jpg')
-					|     
-					h3.sub-title Caio Vaccaro
-					|     
-					p
-						| Web Enginner at 
-						a(href='https://www.hugeinc.com/', target='_blank') Huge Inc
-					|     
-					p
-						i.icon-social-twitter
-						|       
-						a.hover.hover-3d.speaker-link(href='https://twitter.com/caiovaccaro', target='_blank')
-							span(data-title='@caiovaccaro') @caiovaccaro
-				.box-talk
-					time.talk-time="16:40 - 17:20"
-					h4.sub-title="Javascript State of the Union"
-					p="Onde estamos e para onde estamos indo? Todos temos a sensação que o Javascript está dominando cada vez mais espaços, mas o que exatamente está acontecendo? Esta palestra abordará desde as diferentes soluções para aplicações cada vez maiores e mais complexas e também os diferentes usos da linguagem. De modularidade à arquitetura de aplicações, de servidor ao desktop, de immutable à aplicações isomórficas."
-
-			li.li-speaker
-				.box-speaker
-					.box-speaker-media
-						img(alt='Foto do palestrante', src='assets/image/ney.jpg')
-					|     
-					h3.sub-title Ney Simões
-					|     
-					p
-						| Desenvolvedor Mobile at  
-						a(href='http://www.ciandt.com/br-pt/', target='_blank') CI&T
-					|     
-					p
-						i.icon-social-twitter
-						|       
-						a.hover.hover-3d.speaker-link(href='https://twitter.com/ney_simoes', target='_blank')
-							span(data-title='@ney_simoes') @ney_simoes
-				.box-talk
-					time.talk-time="17:20 - 18:00"
-					h4.sub-title="Arquitetura CSS com pré-processadores"
-					p="Pensar na arquitetura CSS pode ser muitas vezes complicado, dispendioso e normalmente é visto como algo de pouca relevância. O depois de algumas milhares de linhas de código CSS deixa de ser algo bonito para se tornar o grande vilão de um projeto. Nessa palestra apresentarei soluções usando Smacss, OOCSS e BEM, mas sendo aplicado na realidade dos pré-processadores. POST: http://migre.me/qpWkA"
+			
 
 			li
 				.box-talk
