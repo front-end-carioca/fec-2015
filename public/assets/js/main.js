@@ -14,7 +14,6 @@ Fec.IndexRoute = (function() {
 	function IndexRoute(container) {
 		this.container = container;
 
-
 		if($(window).height > 580){
 			$.stellar({
 				hideDistantElements: false,
