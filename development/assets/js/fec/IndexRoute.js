@@ -131,7 +131,7 @@ Fec.IndexRoute = (function() {
 
 	IndexRoute.fn.googleMaps = function(args) {
 		var mapCanvas = document.getElementById('map-canvas');
-		var myLatlng = new google.maps.LatLng(-22.904918, -43.178072);
+		var myLatlng = new google.maps.LatLng(-23.0045026, -43.3412166);
 
 		var mapOptions = {
 			center: myLatlng,
