@@ -9331,6 +9331,11 @@ header {
   transition: 0.2s ease-in-out;
 }
 
+.intinerarioBox {
+  width: 800px;
+  margin: auto;
+}
+
 .navMenu {
   position: fixed;
   left: 0;
