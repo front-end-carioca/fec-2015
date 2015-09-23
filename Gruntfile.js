@@ -41,7 +41,8 @@ module.exports = function(grunt) {
 					}
 				},
 				files: {
-					"public/index.html": ["development/index.jade"]
+					"public/index.html": ["development/index.jade"],
+					"public/intinerario.html": ["development/intinerario.jade"]
 				}
 			}
 		},
